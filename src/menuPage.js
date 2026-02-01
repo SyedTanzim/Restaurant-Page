@@ -1,12 +1,16 @@
 function addListItem(list, text, link) {
     const li = document.createElement('li');
     const img = document.createElement('img');
+    const name = document.createElement('p');
+
 
     img.src = link;
-    img.height = 100;
-    li.textContent = text;
+    img.alt = text;
+    name.textContent = text;
 
-    list.appendChild(img);
+    li.appendChild(img);
+    li.appendChild(name);
+
     list.appendChild(li);
 }
 
@@ -31,7 +35,7 @@ export function displayMenuPage() {
     starterSection.appendChild(starterSectionTitle);
 
     const startersList = document.createElement('ul');
-    
+
     addListItem(startersList, 'Garlic Bread with Herb Butter', 'https://www.ambitiouskitchen.com/wp-content/uploads/2023/02/Garlic-Bread-4.jpg');
     addListItem(startersList, 'Crispy Chicken Bites', 'https://www.hauteandhealthyliving.com/wp-content/uploads/2023/01/air-fryer-chicken-bites-10-4.jpg');
     addListItem(startersList, 'Spicy Paneer Tikka', 'https://spicecravings.com/wp-content/uploads/2020/10/Paneer-Tikka-Featured-1.jpg');
@@ -67,7 +71,7 @@ export function displayMenuPage() {
     const mainCourseList = document.createElement('ul');
 
     addListItem(mainCourseList, 'Grilled Chicken Alfredo Pasta', 'https://thescranline.com/wp-content/uploads/2023/05/CHICKEN-ALFREDO-S-01.jpg');
-    addListItem(mainCourseList, 'Spicy Beef Burger with Fries', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFAr1T9xIG09y7vV6JpAv4UPctIiLETJi_RQ&s');
+    addListItem(mainCourseList, 'Spicy Beef Burger with Fries', 'https://static01.nyt.com/images/2025/09/02/multimedia/07EATrex-jalapeno-cheeseburgers-jgwk/07EATrex-jalapeno-cheeseburgers-jgwk-jumbo.jpg');
     addListItem(mainCourseList, 'BBQ Glazed Ribs', 'https://images.getrecipekit.com/20220525185955-img_3912-2.jpg?width=650&quality=90&');
 
     mainCourseSection.appendChild(mainCourseList);
@@ -101,8 +105,8 @@ export function displayMenuPage() {
     const beverageList = document.createElement('ul');
 
     addListItem(beverageList, 'Fresh Lime Soda', 'https://gunjanchopra.com/content/images/2022/08/FI-2.jpg');
-    addListItem(beverageList, 'Iced Coffee', 'https://cdn.loveandlemons.com/wp-content/uploads/2025/05/how-to-make-iced-coffee-at-home.jpg');
-    addListItem(beverageList, 'Mint Mojito', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtwaP80FlMnpCynYz-Vu68aYlTL6lR1dJZ2A&s');
+    addListItem(beverageList, 'Iced Coffee', 'https://kitchenaid.com.au/cdn/shop/articles/Iced_Latte.png?v=1759984682');
+    addListItem(beverageList, 'Mint Mojito', 'https://www.foodandwine.com/thmb/e8AvEfBBfwjg3xmt6E__rRvSZlA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Mojito-FT-RECIPE1022-2000-85cdb1eb59454847b713713e32e365c0.jpg');
 
     beverageSection.appendChild(beverageList);
     menuSection.appendChild(beverageSection);

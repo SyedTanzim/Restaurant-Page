@@ -1,6 +1,7 @@
 import { displayHomePage } from './homePage.js';
 import { displayMenuPage } from './menuPage.js';
 import { displayAboutPage } from './aboutPage.js';
+import './style.css';
 
 displayHomePage();
 

@@ -1,3 +1,11 @@
+function addListItem(list, text) {
+    const li = document.createElement('li');
+
+    li.textContent = text;
+
+    list.appendChild(li);
+}
+
 export function displayHomePage() {
 
     const content = document.querySelector('#content');
@@ -33,24 +41,12 @@ export function displayHomePage() {
     specialtiesSubTitle.textContent = 'At Urban Spice, every dish tells a story. From sizzling starters to rich, flavorful main courses, our menu is designed to satisfy every craving. We focus on quality, freshness, and taste in every bite.';
     specialties.appendChild(specialtiesSubTitle);
 
-
     const specialtiesList = document.createElement('ul');
 
-    const specialtiesItemRecipe = document.createElement('li');
-    specialtiesItemRecipe.textContent = 'Handcrafted recipes';
-    specialtiesList.appendChild(specialtiesItemRecipe);
-
-    const specialtiesItemIngredients = document.createElement('li');
-    specialtiesItemIngredients.textContent = 'Fresh, locally sourced ingredients'
-    specialtiesList.appendChild(specialtiesItemIngredients);
-
-    const specialtiesItemOptions = document.createElement('li');
-    specialtiesItemOptions.textContent = 'Vegetarian and non-vegetarian options'
-    specialtiesList.appendChild(specialtiesItemOptions);
-
-    const specialtiesItemDesserts = document.createElement('li');
-    specialtiesItemDesserts.textContent = 'Delicious desserts and refreshing drinks'
-    specialtiesList.appendChild(specialtiesItemDesserts);
+    addListItem(specialtiesList, 'Handcrafted recipes' );
+    addListItem(specialtiesList, 'Fresh, locally sourced ingredients');
+    addListItem(specialtiesList, 'Vegetarian and non-vegetarian options');
+    addListItem(specialtiesList, 'Delicious desserts and refreshing drinks');
 
     specialties.appendChild(specialtiesList);
 
