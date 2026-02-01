@@ -1,5 +1,6 @@
 import { displayHomePage } from './homePage.js';
 import { displayMenuPage } from './menuPage.js';
+import { displayAboutPage } from './aboutPage.js';
 
 displayHomePage();
 
@@ -18,3 +19,11 @@ export function menuPagebutton() {
     })
 }
 menuPagebutton();
+
+export function aboutPagebutton() {
+    const aboutBtn = document.querySelector('#about-btn');
+    aboutBtn.addEventListener('click', () => {
+        displayAboutPage();
+    })
+}
+aboutPagebutton();
