@@ -2,7 +2,7 @@
 
 A modern, dynamic restaurant landing page built with **Vanilla JavaScript**, **CSS3**, and **HTML5**. This project focuses on DOM manipulation and modular JavaScript design, ensuring that the entire page content is generated dynamically without manual refreshes.
 
-🔗 **Live Demo:** *https://syedtanzim.github.io/Restaurant-Page/*
+🔗 **Live Demo:** *https://syedtanzim.github.io/restaurant-page/*
 
 ---
 
